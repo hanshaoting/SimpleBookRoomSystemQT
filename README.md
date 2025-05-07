@@ -1,0 +1,2 @@
+# SimpleBookRoomSystemQT
+seu大二学期暑期学校语言课程设计大作业；基于qt平台
