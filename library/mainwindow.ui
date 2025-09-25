@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>893</width>
+    <height>556</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>图书室管理系统</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="font">
+       <font>
+        <family>等线</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="mouseTracking">
+       <bool>false</bool>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <property name="font">
+        <font>
+         <family>华文细黑</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <attribute name="title">
+        <string>所有书籍信息</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QTableWidget" name="tableWidget">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>11</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-image:url(:/qt2/project/library/beijing.png);
+border-image:url(:/qt2/project/library/beijing.png)</string>
+          </property>
+          <property name="lineWidth">
+           <number>20</number>
+          </property>
+          <property name="dragEnabled">
+           <bool>false</bool>
+          </property>
+          <property name="dragDropMode">
+           <enum>QAbstractItemView::DragDropMode::DragDrop</enum>
+          </property>
+          <property name="alternatingRowColors">
+           <bool>false</bool>
+          </property>
+          <property name="textElideMode">
+           <enum>Qt::TextElideMode::ElideMiddle</enum>
+          </property>
+          <column>
+           <property name="text">
+            <string>书名</string>
+           </property>
+           <property name="font">
+            <font>
+             <kerning>true</kerning>
+            </font>
+           </property>
+           <property name="background">
+            <color>
+             <red>221</red>
+             <green>195</green>
+             <blue>179</blue>
+            </color>
+           </property>
+           <property name="foreground">
+            <brush brushstyle="NoBrush">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>书目编号</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>221</red>
+             <green>195</green>
+             <blue>179</blue>
+            </color>
+           </property>
+           <property name="foreground">
+            <brush brushstyle="NoBrush">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>作者</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>221</red>
+             <green>195</green>
+             <blue>179</blue>
+            </color>
+           </property>
+           <property name="foreground">
+            <brush brushstyle="NoBrush">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>出版社</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>221</red>
+             <green>195</green>
+             <blue>179</blue>
+            </color>
+           </property>
+           <property name="foreground">
+            <brush brushstyle="NoBrush">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>出版时间</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>221</red>
+             <green>195</green>
+             <blue>179</blue>
+            </color>
+           </property>
+           <property name="foreground">
+            <brush brushstyle="NoBrush">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <property name="font">
+        <font>
+         <family>华文细黑</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <attribute name="title">
+        <string>所有借阅信息</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QTableWidget" name="tableWidget_2">
+          <property name="styleSheet">
+           <string notr="true">
+background-image:url(:/qt2/project/library/jieyuebeijing.png);
+border-image:url(:/qt2/project/library/jieyuebeijing.png)</string>
+          </property>
+          <column>
+           <property name="text">
+            <string>书名</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>247</red>
+             <green>207</green>
+             <blue>155</blue>
+            </color>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>书目编号</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>247</red>
+             <green>207</green>
+             <blue>155</blue>
+            </color>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>登记号</string>
+           </property>
+           <property name="font">
+            <font>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="background">
+            <color>
+             <red>247</red>
+             <green>207</green>
+             <blue>155</blue>
+            </color>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string> 借书证号</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>247</red>
+             <green>207</green>
+             <blue>155</blue>
+            </color>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string> 借阅日期</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>247</red>
+             <green>207</green>
+             <blue>155</blue>
+            </color>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>该册书当前状态</string>
+           </property>
+           <property name="font">
+            <font>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="background">
+            <color>
+             <red>247</red>
+             <green>207</green>
+             <blue>155</blue>
+            </color>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>所有读者信息</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QTableWidget" name="tableWidget_3">
+          <property name="styleSheet">
+           <string notr="true">background-image:url(:/qt2/project/library/duzhe.png);
+border-image:url(:/qt2/project/library/duzhe.png);</string>
+          </property>
+          <column>
+           <property name="text">
+            <string>借书证号</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>251</red>
+             <green>226</green>
+             <blue>152</blue>
+            </color>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>姓名</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>251</red>
+             <green>226</green>
+             <blue>152</blue>
+            </color>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>性别</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>251</red>
+             <green>226</green>
+             <blue>152</blue>
+            </color>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>联系方式</string>
+           </property>
+           <property name="background">
+            <color>
+             <red>251</red>
+             <green>226</green>
+             <blue>152</blue>
+            </color>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>893</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>0</width>
+     <height>12</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>管理书库</string>
+    </property>
+    <property name="toolTipsVisible">
+     <bool>false</bool>
+    </property>
+    <addaction name="actionz"/>
+    <addaction name="separator"/>
+    <addaction name="actions"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>借还书籍</string>
+    </property>
+    <addaction name="actionj"/>
+    <addaction name="separator"/>
+    <addaction name="actionh"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>查询信息</string>
+    </property>
+    <addaction name="action_cha"/>
+    <addaction name="separator"/>
+    <addaction name="action_c"/>
+    <addaction name="separator"/>
+    <addaction name="actionjilu"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string> 文件操作</string>
+    </property>
+    <addaction name="actiondakai"/>
+    <addaction name="separator"/>
+    <addaction name="actionbaocun"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>读者管理</string>
+    </property>
+    <addaction name="actionu"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_5"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="font">
+    <font>
+     <family>楷体</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="whatsThis">
+    <string>欢迎使用图书室管理系统！</string>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="font">
+    <font>
+     <family>幼圆</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonStyle::ToolButtonTextBesideIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionz"/>
+   <addaction name="actions"/>
+   <addaction name="separator"/>
+   <addaction name="actionu"/>
+   <addaction name="separator"/>
+   <addaction name="actionj"/>
+   <addaction name="actionh"/>
+   <addaction name="separator"/>
+   <addaction name="action_cha"/>
+   <addaction name="action_c"/>
+   <addaction name="actionjilu"/>
+   <addaction name="separator"/>
+   <addaction name="actiondakai"/>
+   <addaction name="actionbaocun"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="actions">
+   <property name="icon">
+    <iconset resource="../../../.qrc">
+     <normaloff>:/qt2/project/library/shan.webp</normaloff>:/qt2/project/library/shan.webp</iconset>
+   </property>
+   <property name="text">
+    <string>删除书籍</string>
+   </property>
+  </action>
+  <action name="actionz">
+   <property name="icon">
+    <iconset resource="../../../.qrc">
+     <normaloff>:/qt2/project/library/jia.webp</normaloff>:/qt2/project/library/jia.webp</iconset>
+   </property>
+   <property name="text">
+    <string>增加书籍</string>
+   </property>
+  </action>
+  <action name="actionj">
+   <property name="icon">
+    <iconset resource="../../../.qrc">
+     <normaloff>:/qt2/project/library/iconjie.png</normaloff>:/qt2/project/library/iconjie.png</iconset>
+   </property>
+   <property name="text">
+    <string>借书</string>
+   </property>
+  </action>
+  <action name="actionh">
+   <property name="icon">
+    <iconset resource="../../../.qrc">
+     <normaloff>:/qt2/project/library/huanshu.webp</normaloff>:/qt2/project/library/huanshu.webp</iconset>
+   </property>
+   <property name="text">
+    <string>还书</string>
+   </property>
+  </action>
+  <action name="action_cha">
+   <property name="icon">
+    <iconset resource="../../../.qrc">
+     <normaloff>:/qt2/project/library/cha.png</normaloff>:/qt2/project/library/cha.png</iconset>
+   </property>
+   <property name="text">
+    <string>查询书籍基本信息</string>
+   </property>
+  </action>
+  <action name="action_c">
+   <property name="icon">
+    <iconset resource="../../../.qrc">
+     <normaloff>:/qt2/project/library/jvti.png</normaloff>:/qt2/project/library/jvti.png</iconset>
+   </property>
+   <property name="text">
+    <string>查询特定书籍借阅信息</string>
+   </property>
+  </action>
+  <action name="actiondakai">
+   <property name="icon">
+    <iconset resource="../../../.qrc">
+     <normaloff>:/qt2/project/library/dakai.webp</normaloff>:/qt2/project/library/dakai.webp</iconset>
+   </property>
+   <property name="text">
+    <string>读取文件</string>
+   </property>
+  </action>
+  <action name="actionbaocun">
+   <property name="icon">
+    <iconset resource="../../../.qrc">
+     <normaloff>:/qt2/project/library/baocun.webp</normaloff>:/qt2/project/library/baocun.webp</iconset>
+   </property>
+   <property name="text">
+    <string>保存文件</string>
+   </property>
+  </action>
+  <action name="actionu">
+   <property name="icon">
+    <iconset resource="../../../.qrc">
+     <normaloff>:/qt2/project/library/yonghu.png</normaloff>:/qt2/project/library/yonghu.png</iconset>
+   </property>
+   <property name="text">
+    <string>添加读者</string>
+   </property>
+  </action>
+  <action name="actionjilu">
+   <property name="icon">
+    <iconset resource="../../../.qrc">
+     <normaloff>:/qt2/project/library/huan.png</normaloff>:/qt2/project/library/huan.png</iconset>
+   </property>
+   <property name="text">
+    <string>查询读者借阅记录</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../../../.qrc"/>
+ </resources>
+ <connections/>
+</ui>

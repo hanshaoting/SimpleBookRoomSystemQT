@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icon1.png</file>
+        <file>huan.png</file>
+        <file>iconjie.png</file>
+        <file>jia.webp</file>
+        <file>shan.webp</file>
+        <file>cha.png</file>
+        <file>baocun.webp</file>
+        <file>dakai.webp</file>
+        <file>jvti.png</file>
+        <file>bi.png</file>
+        <file>beijing.png</file>
+        <file>111.jpg</file>
+        <file>jieyuebeijing.png</file>
+        <file>addbook.png</file>
+        <file>yonghu.png</file>
+        <file>huanshu.png</file>
+        <file>huanshu.webp</file>
+    </qresource>
+</RCC>
